@@ -1,1 +1,14 @@
+wait(x);
+signal(x);
 
+wait(mutex);
+if(rc==0) wait(s);
+rc++;
+signal(mutex);
+
+//perform read
+
+wait(mutex);
+rc--;
+if (rc==0) signal(s);
+signal(mutex)
