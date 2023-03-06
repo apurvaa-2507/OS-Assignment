@@ -1,1 +1,5 @@
-
+wait(x);
+wait(s);
+//perform write
+signal(s);
+signal(x);
